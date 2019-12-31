@@ -23,7 +23,7 @@ class SlidingUpPanel extends React.Component {
       top: PropTypes.number,
       bottom: PropTypes.number
     }),
-    height: PropTypes.number,
+    height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     onDrag: PropTypes.func,
     onDragStart: PropTypes.func,
     onDragEnd: PropTypes.func,
